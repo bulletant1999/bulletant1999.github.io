@@ -3,6 +3,10 @@ body {
 }
 
 h1 {
-  color: maroon;
+  color: white;
   text-align: center;
+}
+
+p {
+  color: white;
 }
