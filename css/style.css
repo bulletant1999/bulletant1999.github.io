@@ -3,3 +3,12 @@ body {
 }
  /* May consider changing background color */
 
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  color: red;
+}
+
