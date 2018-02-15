@@ -3,8 +3,11 @@ body {
 }
 
 h1 {
-  color: black;
+  color: red;
   text-align: center;
 }
 
+p {
+  color: red;
+}
 
