@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-  <head>
-    <title>Hello</title>
-  </head>
+<head>
+  <title>Portfolio for Anthony Papagno</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 <body>
+
+  <h1>Portfolio</h1>
+  
+  <nav>
+   <a href="/fieldreport.html/">Field Report</a>
+  </nav>
+
+  <h3>By Anthony Papagno</h3>
+  
+  <!-- Image was acquired on my Facebook and was my current Facebook profile picture. -->
+  <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/18034105_1892061651082182_7218005597698176056_n.jpg?oh=eb12fa91745e518e962c8cf064ed8522&oe=5B0A8D3C" alt="Facebook Picture of me" style="width:500px;height:500px;border:0;">
+  <br>
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+  
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Arial";
+  var gradient=ctx.createLinearGradient(0,0,c.width,0);
+  gradient.addColorStop("0","magenta");
+  gradient.addColorStop("0.5","blue");
+  gradient.addColorStop("1.0","red");
+  ctx.fillStyle=gradient;
+  ctx.fillText("Hello World", 10, 50);
+  </script>
+  
+  <svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">GG</text>
+  </svg>
+  
+  <p>Hey, my name is Anthony, and I love to play videogames! 
+   I also really like to travel and ski and find it super exciting anytime I get a chance to travel somewhere different in the world even if it's still traveling within the United States. 
+   I grew up in Boca Raton Florida and moved here to Fort Myers going to FGCU and I'm currently going towards a Bachelor in Software Engineering.</p>
+  <br>
+  <audio controls>
+  <source src="bensound-energy.mp3" type="audio/mpeg">
+  </audio>
+  <br>
+  <video width="320" height="240" controls>
+  <source src="738918093.mp4" type="video/mp4">
+  </video>
+ 
+  <h3 class="Classes">Courses I'm currently taking</h3>
+    <ol>
+      <li>Intro to Computer Science</li>
+      <li>Beginning Spanish 1</li>
+      <li>Composition 2</li>
+      <li>Precalculus</li>
+    </ol>
+  
+  <object data="Field Report.pdf" type="bulletant1999.github.io/Field Report.pdf" width="400px" height="500px">
+  </object>
+
+  
 </body>
 </html>
