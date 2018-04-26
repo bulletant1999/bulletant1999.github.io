@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Caesar Cipher</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Caesar Cipher</h1>
+
+<p>Input:</p>
+
+<input id="in">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="out"></p>
+
+<script>
+function myFunction() {
+    var inVar, outVar;
+
+    // Input
+    inVar = document.getElementById("in").value;
+    
+    // Processing
+    outVar = "";
+	var position = 0;
+	while (position < 3) {
+		outVar = outVar + String.fromCharCode(inVar.charCodeAt(position) - 3);
+        position = position + 1;
+	}
+
+	// Output
+    document.getElementById("out").innerHTML = outVar;
+}
+</script>
