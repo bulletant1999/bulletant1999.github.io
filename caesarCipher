@@ -36,3 +36,5 @@ function myFunction() {
     document.getElementById("out").innerHTML = outVar;
 }
 </script>
+</body>
+</html>
